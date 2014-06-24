@@ -53,8 +53,10 @@ bool GameScene::init()
 
 void GameScene::cubeDown(float time)
 {
-    //printf ("axiba");
     tetrislogic->process();
+    
+    //intervalCallback() is supposed to be called in tetrislogic->process().
+    //but it doesn't work. ??
     intervalCallback();
 }
 
@@ -100,19 +102,18 @@ Cube* GameScene::getCube(int x, int y)
 
 void GameScene::onKeyPressed(EventKeyboard::KeyCode keyCode, cocos2d::Event *event)
 {
-    printf("asdf");
     if (keyCode == EventKeyboard::KeyCode::KEY_S)
-        tetrislogic->move(TetrisLogic::Direction::Down);
+        tetrislogic->tryMove(TetrisLogic::Direction::Down);
     else if (keyCode == EventKeyboard::KeyCode::KEY_A)
-        tetrislogic->move(TetrisLogic::Direction::Left);
+        tetrislogic->tryMove(TetrisLogic::Direction::Left);
     else if (keyCode == EventKeyboard::KeyCode::KEY_D)
-        tetrislogic->move(TetrisLogic::Direction::Right);
+        tetrislogic->tryMove(TetrisLogic::Direction::Right);
     printf("get!");
 }
 
 void GameScene::onKeyReleased(EventKeyboard::KeyCode keycode, cocos2d::Event *event)
 {
-    printf("asdf");
+    
 }
 
 bool GameScene::onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event)

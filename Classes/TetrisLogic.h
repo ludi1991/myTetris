@@ -62,13 +62,16 @@ public:
     void tryMove(Direction direction);
     void move(Direction direction);
     bool canMove(Shape shape,Direction direction);
+    
     Shape getShape();
     ShapeType getCurShapeValue(){return curshapetype;}
     bool hasShape(){return !curshape.empty();}
+    
     int getMetric(int x,int y){return metric[y][x];}
     void setMetric(int x,int y,int value){metric[y][x] = value;}
     int getMetricHeight(){return metric.size();}
     int getMetricWidth(){return metric[0].size();}
+    
     void stainShape();
     
     
