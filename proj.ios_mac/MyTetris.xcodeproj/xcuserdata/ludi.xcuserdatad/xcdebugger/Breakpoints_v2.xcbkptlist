@@ -236,9 +236,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
-            endingLineNumber = "102"
-            landmarkName = "GameScene::onKeyPressed(EventKeyboard::KeyCode keyCode, cocos2d::Event *event)"
-            landmarkType = "5">
+            endingLineNumber = "102">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

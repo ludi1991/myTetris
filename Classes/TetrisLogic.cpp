@@ -13,7 +13,7 @@
 
 auto TetrisLogic::ShapeLib = TetrisLogic::defShapeLib();
 
-TetrisLogic::TetrisLogic(float theduration,int width,int height,intervalFunc &thefunc)
+TetrisLogic::TetrisLogic(float theduration,int width,int height,intervalFunc thefunc)
 :metric(std::vector<std::vector<int>>(height,std::vector<int>(width,0)))
 ,duration(theduration)
 ,func(thefunc)
@@ -131,7 +131,7 @@ void TetrisLogic::process()
     }
    
     
-  //  func();
+    func();
     
 }
 

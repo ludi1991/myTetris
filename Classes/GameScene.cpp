@@ -57,7 +57,7 @@ void GameScene::cubeDown(float time)
     
     //intervalCallback() is supposed to be called in tetrislogic->process().
     //but it doesn't work. ??
-    intervalCallback();
+    //intervalCallback();
 }
 
 std::string GameScene::ParseColor(GameScene::Cube_Color color)

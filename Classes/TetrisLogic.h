@@ -48,7 +48,7 @@ public:
     typedef std::vector<Point> Shape;
     
     
-    TetrisLogic(float duration,int width,int height,intervalFunc &intervalfunc);
+    TetrisLogic(float duration,int width,int height,intervalFunc intervalfunc);
     ~TetrisLogic();
     void init();
     bool createShape(ShapeType type);
@@ -79,7 +79,7 @@ private:
     
     void initShapeLib();
     
-    intervalFunc &func; 
+    intervalFunc func; 
     std::vector<std::vector<int>> metric;   //game metric
     Shape curshape;
     ShapeType curshapetype;
