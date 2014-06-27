@@ -63,6 +63,10 @@ public:
     void move(Direction direction);
     bool canMove(Shape shape,Direction direction);
     
+    void eraseLine();
+    
+    
+    
     Shape getShape();
     ShapeType getCurShapeValue(){return curshapetype;}
     bool hasShape(){return !curshape.empty();}

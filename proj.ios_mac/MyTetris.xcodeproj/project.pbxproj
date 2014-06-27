@@ -81,6 +81,7 @@
 		81389BDA1951E2530038D45D /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 81389BCC1951E2530038D45D /* yellow.png */; };
 		81B2286B195C1FB200B7BC20 /* TetrisLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81389BBC195148090038D45D /* TetrisLogic.cpp */; };
 		81B2286E195C1FDE00B7BC20 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81389BB61951256B0038D45D /* GameScene.cpp */; };
+		81B22872195D39CA00B7BC20 /* Cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81389BC31951CBDD0038D45D /* Cube.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
@@ -749,6 +750,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B22872195D39CA00B7BC20 /* Cube.cpp in Sources */,
 				81B2286E195C1FDE00B7BC20 /* GameScene.cpp in Sources */,
 				5087E75717EB910900C73F5D /* AppDelegate.cpp in Sources */,
 				81B2286B195C1FB200B7BC20 /* TetrisLogic.cpp in Sources */,

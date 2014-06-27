@@ -36,7 +36,7 @@ bool GameScene::init()
             spritevec.pushBack(cube);
         }
     }
-    schedule(schedule_selector(GameScene::cubeDown),0.1f);
+    schedule(schedule_selector(GameScene::cubeDown),0.4f);
     auto listener = EventListenerKeyboard::create();
     listener->onKeyPressed = CC_CALLBACK_2(GameScene::onKeyPressed, this);
     listener->onKeyReleased = CC_CALLBACK_2(GameScene::onKeyReleased, this);
